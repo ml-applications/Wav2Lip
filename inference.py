@@ -9,6 +9,7 @@ from models import Wav2Lip
 
 print('PyTorch version', torch.__version__)
 print('CUDA Available?', torch.cuda.is_available())
+print('CUDA Device count', torch.cuda.device_count())
 
 parser = argparse.ArgumentParser(description='Inference code to lip-sync videos in the wild using Wav2Lip models')
 
