@@ -7,6 +7,9 @@ from glob import glob
 import torch, face_detection
 from models import Wav2Lip
 
+for k, v in os.environ.items():
+  print('{}={}'.format(k, v))
+
 print('PyTorch version', torch.__version__)
 print('CUDA Available?', torch.cuda.is_available())
 print('CUDA Device count', torch.cuda.device_count())
