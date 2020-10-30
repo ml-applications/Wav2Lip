@@ -7,6 +7,9 @@ from glob import glob
 import torch, face_detection
 from models import Wav2Lip
 
+print('PyTorch version', torch.__version__)
+print('CUDA Available?', torch.cuda.is_available())
+
 parser = argparse.ArgumentParser(description='Inference code to lip-sync videos in the wild using Wav2Lip models')
 
 parser.add_argument('--checkpoint_path', type=str, 
